@@ -21,7 +21,6 @@ function NavBare() {
       <Nav.Link  as = {Link} to="/Profiles" >Profiles</Nav.Link>
       <Nav.Link  as = {Link} to="/Login" >Login</Nav.Link>
         
-
       
 
 

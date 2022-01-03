@@ -1,9 +1,11 @@
 import React from 'react'
-
-function Profiles() {
+import UserCard from './UserCard'
+function Profiles({user}) {
     return (
-        <div>
-            <h1>Profiles</h1>
+        <div className="Card" >
+            {
+                user.map ( (el) => <UserCard element ={el} key ={el.id}  /> )
+            }
         </div>
     )
 }
