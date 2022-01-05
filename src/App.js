@@ -7,10 +7,20 @@ import Login from './components/Login' ;
 import { Route, Switch } from 'react-router-dom';
 import {Users} from './components/User'
 import Details from './components/Details' ;
+import {useState} from 'react'
 function App() {
+   
+
+
+
+       const  [login , setlogin] = useState (false)
+
+
+
+
   return (
     <div className="App">
-     <NavBare/>
+     <NavBare login = {login} setlogin ={setlogin}/>
      <Switch>
      <Route exact path="/" component ={Home} /> 
     {/* <Route path="/Profiles" > 
